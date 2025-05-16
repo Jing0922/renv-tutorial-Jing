@@ -4,3 +4,22 @@ format: html
 editor: visual
 ---
 
+```{r}
+library(HistData)
+library(tidyverse)
+```
+
+```{r}
+data(Breslau)
+```
+
+
+```{r}
+#|label: Breslau:age >= 5
+#|echo: False
+
+age_5 <- Breslau %>%
+  filter(age >=5)
+summary(breslau_filtered)
+```
+
